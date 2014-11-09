@@ -28,7 +28,7 @@ Pod::Spec.new do |s|
   s.osx.frameworks   = 'SystemConfiguration', 'CoreServices'
 
   s.library = 'z.1'
-
+  s.requires_arc = false
   s.subspec 'ASIWebPageRequest' do |ws|
     ws.source_files = 'Classes/ASIWebPageRequest/'
     ws.library      = 'xml2.2'
